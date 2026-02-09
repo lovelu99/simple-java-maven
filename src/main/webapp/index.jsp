@@ -16,7 +16,7 @@
     <p>Try the servlet endpoint:</p>
     <ul>
       <li><code>/simple-webapp/hello</code></li>
-      <li><code>/simple-webapp/hello?name=Aman</code></li>
+      <li><code>/simple-webapp/hello?name=Aayan</code></li>
     </ul>
 
     <p>If you're running locally on Tomcat:</p>
