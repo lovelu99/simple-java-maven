@@ -21,17 +21,30 @@ mvn clean package
 
 This creates:
 - `target/simple-webapp.war`
+## Install Tomcat
+sudo apt install tomcat9 -y
+sudo systemctl start tomcat9
+sudo systemctl enable tomcat9
+sudo systemctl status tomcat9
+
+
 
 ## Deploy to Tomcat
 Copy the WAR into Tomcat's `webapps/` directory, then start Tomcat.
 
 Example:
 ```bash
-cp target/simple-webapp.war /path/to/tomcat/webapps/
+cp target/simple-webapp.war /var/lib/tomcat9/webapps/
 # start tomcat (bin/startup.sh on Linux/macOS, startup.bat on Windows)
 ```
 
 Tomcat will deploy it at context path `/simple-webapp`.
+
+sudo systemctl restart tomcat9
+
+sudo vi /etc/tomcat9/server.xml
+<Connector port="8080" protocol="org.apache.coyote.http11.Http11NioProtocol"
+
 
 ## Try it
 - Home page:
