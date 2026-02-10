@@ -11,7 +11,7 @@
   </style>
 </head>
 <body>
-  <h1>Simple Java Web App (Tomcat)</h1>
+  <h1>Simple Java Web App1 (Tomcat)</h1>
   <div class="box">
     <p>Try the servlet endpoint:</p>
     <ul>
